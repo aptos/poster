@@ -16,7 +16,7 @@ angular.module('posts', ['ngResource']).
 
 var myApp = angular.module('angapp', []);
       
-angapp.directive('MyDatepicker', function ($parse) {
+myApp.directive('MyDatepicker', function ($parse) {
     return function (scope, element, attrs, controller) {
       console.info("DATEPICKER")
         var ngModel = $parse(attrs.ngModel);
